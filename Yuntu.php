@@ -45,7 +45,7 @@ class Yuntu extends \yii\base\Component
         return $this->datamanage('delete', ['ids' => $ids]);
     }
 
-    public function around($center, $options)
+    public function around($center, $options=[])
     {
         $data = ArrayHelper::merge([
             'center' => $center,
